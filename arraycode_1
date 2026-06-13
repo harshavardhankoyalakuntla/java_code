@@ -15,3 +15,16 @@ public class Array {
         }
     }
 }
+
+Question 2: Access Elements Using Index
+
+public class Array {
+    public static void main(String[] args)
+    {
+        int[] a = {5, 10, 15, 20, 25};
+        
+            System.out.println("First Element: "+a[0]);
+            System.out.println("last Element: "+a[a.length-1]);
+        
+    }
+}
