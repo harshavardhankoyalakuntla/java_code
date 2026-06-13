@@ -81,5 +81,29 @@ public class Array {
             System.out.print(a[i]+" ");
         }
     }
+
+Question 6: Find the second smallest number.
+
+public class Array {
+    public static void main(String[] args)
+    {
+        int[] a = {10, 50, 20, 80, 30};
+        int largest=a[0];
+        int secondlargest=a[0];
+        for(int i=1;i<a.length;i++)
+        {
+            if(a[i]>largest)
+            {
+                secondlargest=largest;
+                largest=a[i];
+            }
+            else if( a[i]>secondlargest)
+            {
+                secondlargest=a[i];
+            }
+        }
+        System.out.print(secondlargest);
+    }
+}
 }
 
